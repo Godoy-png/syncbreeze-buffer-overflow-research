@@ -1,5 +1,6 @@
 # Sync Breeze Enterprise 10.0.28 - Buffer Overflow Research
 
+
 ## Objective
 
 Study of a classic stack-based buffer overflow vulnerability
