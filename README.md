@@ -105,7 +105,7 @@ Where:
 
 Bad characters were identified to determine which bytes could not be
 safely processed by the application.
-![badchars.txt](scripts/badchars.txt)
+[badchars.txt](scripts/badchars.txt)
 
 ---
 
