@@ -41,8 +41,11 @@ Both virtual machines (target and attacker) were configured using
 Bridged Network Adapter mode in order to allow direct network
 communication between the systems during the exploitation process.
 
----
+#### Sync Breeze Login Page
 
+![Sync Breeze Login](screenshots/syncbreeze_login_page.png)
+
+---
 
 ## Methodology
 
