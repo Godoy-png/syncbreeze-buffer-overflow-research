@@ -43,7 +43,7 @@ communication between the systems during the exploitation process.
 
 #### Sync Breeze Client
 
-![Sync Breeze Client](screenshots/syncbreeze_client)
+![Sync Breeze Client](screenshots/syncbreeze_client.png)
 
 #### Sync Breeze Login Page
 
