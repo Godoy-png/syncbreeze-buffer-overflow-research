@@ -27,7 +27,7 @@ The objective of this project was to better understand:
 
 ---
 
-## 1. Lab Setup
+## Lab Setup
 
 The first step consisted of installing
 `Sync Breeze Enterprise 10.0.28`
